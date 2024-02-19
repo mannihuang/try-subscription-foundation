@@ -7,7 +7,7 @@ import {
 import { APP_URL } from "@/constants/common";
 import BigBaseApi from "../big-base-api";
 
-const SubscriptWidgetScriptName = "Subscription Widget Script";
+const SubscriptWidgetScriptName = `${process.env.DEPLOY_STAGE} - Subscription Widget Script`;
 
 export default class ScriptsApi extends BigBaseApi {
   public baseUri = "/content/scripts";
