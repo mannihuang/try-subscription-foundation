@@ -81,7 +81,7 @@ async function createStorefrontCart(cart) {
     if (response.status == 200) {
       response = {
         cart_id: json.id,
-        item_id: json.lineItems.physicalItems[0].id
+        item_id: json.lineItems.digitalItems[0].id
       }
     } else {
       // get exisiting cart id from string
