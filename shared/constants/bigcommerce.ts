@@ -7,7 +7,7 @@ export const BC_APP_SECRET = process.env.BC_APP_SECRET;
 export const BC_APP_CALLBACK_URL = `${APP_URL}/api/auth`;
 
 // BigCommerce Channel Name
-export const SUBSCRIPTION_CHANNEL_NAME = "Stripe Subscriptions";
+export const SUBSCRIPTION_CHANNEL_NAME = `${process.env.DEPLOY_STAGE} - Stripe Subscriptions`;
 
 // BigCommerce Customer Attribute Field & Metafield Names
 export const SUBSCRIPTION_CUSTOMER_ATTRIBUTE_NAME = "stripe_customer_id";
